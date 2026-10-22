@@ -1,0 +1,23 @@
+name: Tuas MCP Server
+type: MCPServer
+generated: '2026-10-22'
+method: none
+status: none
+note: >-
+  Checked, nothing there. Tuas Limited (ASX:TUA) is a holding company whose site
+  (tuas.com.au) publishes only About and Investor Relations pages. No MCP server
+  is documented or advertised, a web search for a Tuas or Simba Telecom MCP server
+  found none, and pre-flight contract discovery on tuas.com.au graded mcp absent.
+  There is no OpenAPI to derive a candidate tool list from, so no tools are listed.
+checks:
+- url: https://tuas.com.au/llms.txt
+  status: 404
+- url: https://www.simba.sg/llms.txt
+  status: 404
+- search: Tuas Limited OR Simba Telecom MCP server API developer
+  result: no matching server
+tools: []
+deployment:
+  mode: none
+  auth: unknown
+  verified: searched

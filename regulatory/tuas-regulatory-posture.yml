@@ -1,0 +1,79 @@
+generated: '2026-10-22'
+method: searched
+source: https://simba.sg/data-protection-notice
+scope_note: >-
+  Tuas Limited's own site (tuas.com.au, a JavaScript shell read rendered) publishes only corporate-governance
+  documents (board charter, code of conduct, whistleblower, anti-bribery, diversity, market-disclosure and
+  securities-trading policies) and no privacy notice, terms or trust page. Its consumer-facing data
+  handling is published by its operating subsidiary SIMBA Telecom Pte Ltd, which tuas.com.au links to at
+  https://www.simba.sg/. Every signal below therefore comes from SIMBA's Data Protection Notice, written under
+  Singapore's PDPA, and describes the subsidiary's posture rather than a Tuas-group document.
+  simba.sg/privacy and simba.sg/privacy-policy return 404; the notice lives at /data-protection-notice, as the
+  SIMBA terms (https://simba.sg/terms, 200) state.
+signals:
+  data_subject_request:
+    url: https://simba.sg/data-protection-notice
+    section: Access and Correction of your Personal Data
+    evidence:
+    - source: https://simba.sg/data-protection-notice
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        Should you wish to request access to your Personal Data collected by us, i.e. for us to provide you
+        with your Personal Data in our possession/control and information about the ways your Personal Data
+        has been used or disclosed (within a year before), please send an email to our Data Protection Officer
+        (see below) and we will respond to your access request within 30 days.
+    - source: https://simba.sg/data-protection-notice
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        If you would like to withdraw your consent for our collection, use and/or disclosure of your Personal
+        Data, you may make a withdrawal request by writing an email with your full name and SIMBA account
+        number(s) to our Data Protection Officer.
+    note: >-
+      Access requests go to a named Data Protection Officer by email with a 30-day response commitment (a
+      reasonable fee may be charged); consent withdrawal follows the same channel. No self-service portal is
+      described.
+  data_retention:
+    url: https://simba.sg/data-protection-notice
+    section: Retention of your Personal Data
+    evidence:
+    - source: https://simba.sg/data-protection-notice
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        In accordance with PDPA, we will retain your Personal Data for only as long as there is a business or
+        legal purpose. Where we continue to have a business/legal purpose in retaining your Personal Data, we
+        regret that we may not be able to comply with any request to delete your Personal Data that we have in
+        our possession/control.
+    note: >-
+      Purpose-bound retention with no stated periods, and an explicit limit on deletion requests while a
+      business or legal purpose persists.
+  data_residency:
+    url: https://simba.sg/data-protection-notice
+    section: Transfer of Personal Data outside Singapore
+    evidence:
+    - source: https://simba.sg/data-protection-notice
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        We may transfer your Personal Data outside Singapore, e.g. to our service providers in relation to the
+        relevant Purposes. In so doing, we will ensure that the organisations receiving your Personal Data
+        outside Singapore offer a standard of protection that is comparable to that under PDPA, and comply with
+        the terms herein this Notice.
+    note: >-
+      No residency commitment: data may leave Singapore, with a PDPA-comparable-protection undertaking for
+      recipients. Recipients and destination countries are not named (no subprocessor list found).
+  incident_notification:
+    url: https://simba.sg/data-protection-notice
+    section: Protection and Breach Notification
+    evidence:
+    - source: https://simba.sg/data-protection-notice
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        If we assess that the data breach constitutes a notifiable data breach, we will notify the relevant
+        parties as required by law.
+    note: >-
+      Breach notification is tied to the PDPA "notifiable data breach" assessment; no customer-facing
+      timeline beyond what the law requires is given.

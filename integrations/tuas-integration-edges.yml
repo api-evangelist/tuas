@@ -1,0 +1,22 @@
+generated: '2026-10-22'
+method: none
+source:
+- https://zapier.com/apps/tuas/integrations
+- https://n8n.io/integrations/tuas/
+- https://composio.dev/toolkits/tuas
+- https://monid.ai/tools/tuas
+checked:
+- https://tuas.com.au/
+- https://tuas.com.au/about.html
+- https://tuas.com.au/investors.html
+- https://zapier.com/apps/tuas/integrations
+- https://n8n.io/integrations/tuas/
+- https://www.make.com/en/integrations/tuas
+- https://composio.dev/toolkits/tuas
+- https://monid.ai/tools/tuas
+summary: Tuas Limited is an ASX-listed holding company (Singapore mobile operator Simba Telecom). Its site tuas.com.au
+  publishes only About and Investor Relations pages; no integrations, partner or marketplace page, and no API contract
+  exists to name partner services. No marketplace listing was found.
+marketplace_apps: []
+edges: []
+templates: []

@@ -1,0 +1,8 @@
+generated: '2026-10-22'
+method: none
+note: No first-party SDK, CLI or client library is published; tuas.com.au has no developer portal or docs, and the npm and PyPI names "tuas" do not exist (registry.npmjs.org/tuas 404, pypi.org/pypi/tuas/json 404).
+checked:
+- https://tuas.com.au/
+- https://registry.npmjs.org/tuas
+- https://pypi.org/pypi/tuas/json
+packages: []

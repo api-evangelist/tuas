@@ -1,23 +1,70 @@
 aid: tuas
+
 name: Tuas
-description: 'Tuas is a company surfaced via the API Evangelist harvest backlog (source: australia-apidays-2026)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: Tuas Limited (ASX:TUA) is an Australian-listed holding company incorporated in March 2020 within the TPG Telecom group. After the TPG Telecom and Vodafone Hutchison Australia merger in June 2020, the Singapore mobile business (TPG Telecom Pte Ltd, now Simba Telecom Pte Ltd) was demerged into Tuas, whose site directs Singapore mobile customers to simba.sg and also publishes material on its acquisition of M1. Its own site (tuas.com.au) carries only About and Investor Relations pages; no developer portal, API documentation or public API is published there.
+
 url: https://raw.githubusercontent.com/api-evangelist/tuas/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:australia-apidays-2026
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-22 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-22'
+
 modified: '2026-10-22'
+
 tags:
 - Company
-apis: []
+- Telecommunications
+- Mobile
+- Singapore
+- Australia
+- ASX Listed
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
+image: https://tuas.com.au/img/logo.svg
+
 common:
+- type: Hosts
+  url: hosts/tuas-hosts.yml
+- type: DomainSecurity
+  url: security/tuas-domain-security.yml
 - type: Website
   url: https://tuas.com.au/
+- type: About
+  url: https://tuas.com.au/about.html
+- type: InvestorRelations
+  url: https://tuas.com.au/investors.html
+
+apis: []
+
+x-coverage:
+  state: covered
+  reason: identity-verified
+  detail: Website tuas.com.au is a JS shell; rendered pages name Tuas Limited (ASX:TUA). Site publishes only About and Investor Relations pages; no developer, docs, pricing, terms or privacy pages are linked.
+  evidence:
+  - url: https://tuas.com.au/
+    status: 200
+  - url: https://tuas.com.au/about.html
+    status: 200
+  - url: https://tuas.com.au/investors.html
+    status: 200
+  - url: https://tuas.com.au/img/logo.svg
+    status: 200
+x-enrichment:
+  date: '2026-10-22'
+  status: enriched
+  artifacts_added: 9
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic
